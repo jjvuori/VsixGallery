@@ -144,10 +144,8 @@ namespace VsixGallery
 			app.UseAuthentication();
 			app.UseEndpoints(endpoints =>
 			{
-				endpoints.MapControllerRoute(
-					name: "default",
-					pattern: "{controller=Home}/{action=Index}/{id?}");
-					endpoints.MapRazorPages();
+				endpoints.MapControllers();
+				endpoints.MapRazorPages();
 			});
 	
 		}
