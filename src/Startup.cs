@@ -141,7 +141,7 @@ namespace VsixGallery
 			app.UseMvcWithDefaultRoute();
 
 			app.UseAuthorization();
-			app.UseAuthentication();
+			// app.UseAuthentication();
 			app.UseEndpoints(endpoints =>
 			{				
 				endpoints.MapRazorPages();
