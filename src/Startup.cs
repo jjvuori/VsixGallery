@@ -109,6 +109,7 @@ namespace VsixGallery
 				app.UseHsts();
 			}
 
+			app.UseAuthentication();
 			app.UseHttpsRedirection();
 
 			app.Use((context, next) =>
