@@ -41,7 +41,7 @@ namespace VsixGallery
 				options.Filters.Add(new AuthorizeFilter(policy));
 			});*/
         ;
-			IMvcBuilder mvcBuilder = services.AddRazorPages()
+			IMvcBuilder mvcBuilder = services.AddRazorPages();
 				//.AddMicrosoftIdentityUI();
 #if DEBUG
 			// The runtime compilation package is only installed for the Debug configuration.
